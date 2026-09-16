@@ -189,9 +189,96 @@
 # print(s1.replace("one", "1"))  #  hello 1 two three 1 1 1
 # print(s1.replace("one", "1",2))  #  hello 1 two three 1 one one
 
-l = ["akram", "ahmed", "123"]
-print("".join(l))  # akramahmed123
-print("-".join(l))  # akram-ahmed-123
-print(",".join(l)) 
+# l = ["akram", "ahmed", "123"]
+# print("".join(l))  
+# print("-".join(l))  # akram-ahmed-123
+# print(",".join(l)) 
 
-    
+# n = "akram"
+# l="python"
+# y=30
+# print("Hello my name is : %s I Love %s and I Have %d  Years Old" %(n,l,y))# Hello akram I Love python and I Have 30 Years Old
+# print("I Have %.2f  Years Old" %(y))
+# print("Hello my name is : %.2s " %(n))
+# print("My old is : {:.2f}".format(y))
+
+# a , b , c = 10, 20, 30
+# print("{2} {0}  {1} ".format(a,b,c))
+# print(f"{c:.2f} {a:.3f}  {b:.5f} ")
+# print("Hello my name is : {} I Love {} and I Have {}  Years Old".format(n,l,y))
+# print(f"Hello my name is : {n} I Love {l} and I Have {y}  Years Old")
+
+#*! من 23 حتى 21 # ----------------------------
+
+# l = ["akram", "ahmed", "@" ,1 ,2 , True , False , 10.5 , 20.5]
+# print(l)  # ['akram', 'ahmed', '@', 1, 2, True, False, 10.5, 20.5]
+# print(type(l))  # <class 'list'>
+# print(type(l[-1]))  # <class 'list'>
+# print(l[1:4])  
+# print(l[4:])  
+# l[0:3]=["A"]
+# print(l)
+
+# l = ["akram", "@" ,1, False , 10.5 , 20.5]
+# l.append("python")
+# print(l)  # ['akram', 'ahmed', '@', 1,
+# l2 = ["ahmed", "python", 2, True , 30.5 , 40.5]
+# l.append(l2)
+# print(l)  # ['akram', 'ahmed', '@', 1, False
+# print(l[7][1])  # python
+
+# l.extend(l2)
+# print(l)  # ['akram', 'ahmed', '@', 1, False
+# l.insert(1, "insert")
+# print(l)  # ['akram', 'insert', 'ahmed', '@', 1, False
+# l.remove("insert")
+# print(l)  # ['akram', 'ahmed', '@', 1, False
+# l3 = l.pop(1)
+# print(l3)  # ahmed
+# print(l)  # ['akram', '@', 1, False
+# a=[1,-8,2,3,4,-5,6,-7,1]
+# a.sort()
+# print(a)  
+# a.sort(reverse=True)
+# print(a)
+# print(a.count(1))  # 2
+# print(len(a))  # 1
+# a.reverse()
+# print(a)  # [-7, -5, -8, 1, 1, 2, 3, 4, 6]
+# b=a.copy()
+# a.clear()
+# print(a)  # []
+# print(b)  # [-7, -5, -8, 1, 1, 2, 3, 4, 6]
+
+# l = ["akram", "ahmed", "@" ,1 ,2 , True , False , 10.5 , 20.5]
+# print(l.pop(1))  # ahmed
+# print(l)  # ['akram', 'ahmed', '@', 1, 2, True, False, 10.5, 20.5]
+
+
+#*! من 25 حتى 24 # ----------------------------
+
+# t1 = ("Html", "CSS", "JS", "Python")
+# t2 = "Html", "CSS", "JS", "Python"
+# print(t1)  # ('Html', 'CSS', 'JS', 'Python')
+# print(t2)  # ('Html', 'CSS', 'JS', 'Python')
+# print(type(t1))  # <class 'tuple'>
+# print(type(t2))  # <class 'tuple'>
+# print(t2[-1])  
+
+# a = (1,2,3)
+# b = (4,8)
+# c = a +(9,11,'akram') + b
+# print(c)
+
+# t=(1,2)
+# l=[5,7]
+# s="akram"
+# print(t * 3)
+# print(l * 3)
+# print(s * 3)
+
+# a = ('a','c',4,'w')
+# x,y , _ ,z = a
+# print(x,y,z)
+
+#*! من 32 حتى 26 # ----------------------------
