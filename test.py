@@ -164,4 +164,105 @@
 # print(c)
 # print(a,b,c)
 
+# my_list = [1, 2, 3, 3, 4, 5, 1]
+# unique_list=list(set(my_list))
+# print(unique_list)
+# print(type(unique_list))
+# print(unique_list[:-1])
+# print(*unique_list[:-1], sep=", ")
+# print(*unique_list , sep=" , ")
+
+
+# nums = {1, 2, 3}
+# letters = {"A", "B", "C"}
+# x = nums | letters
+# print(x)
+# z = nums.union(letters)
+# print(x)
+# c = nums.update(letters)
+# print(x)
+
+# v = {*nums, *letters}
+# print(v)
+
+# s={1,2,3}
+# print(s)
+# s.clear()
+# print(s)
+# s.update(["A", "B"])
+# print(s)
+# print(s)
+# s.discard("c")
+# print(s)
+
+
+# set_one = {1, 2, 3}
+# set_two = {1, 2, 3, 4, 5, 6}
+
+# print(set_two.issuperset(set_one))
+
+
+# d={
+#     "s1":"HTML Progress Is 90%",
+#     "s2":  "CSS Progress Is 80%",
+#     "s3":  "Python Progress Is 30%"
+# }
+# print(d)
+# print(d.values())
+# d.update({"s4":"AI Progress Is 20%"})
+# print(d)
+
+# # 1. إنشاء الـ Dictionary
+# skills = {
+#     "HTML": "90%",
+#     "CSS": "80%",
+#     "Python": "30%"
+# }
+
+# # تحويل المفاتيح إلى قائمة للوصول إليها بالفهرس (Index)
+# k = list(skills.keys())
+
+# # 2. طباعة المهارات الثلاث بدون Loop
+# print(f'"{k[0]} Progress Is {skills[k[0]]}"')
+# print(f'"{k[1]} Progress Is {skills[k[1]]}"')
+# print(f'"{k[2]} Progress Is {skills[k[2]]}"')
+
+# # 3. إضافة المهارة الجديدة
+# skills["AI"] = "20%"
+
+# # 4. طباعة المهارة الجديدة
+# print(f'"AI Progress Is {skills["AI"]}"')
+
+
+# d={
+#     "HTML":"90%",
+#     "CSS":"80%",
+#     "Python":"30%"
+# }
+# my_iter = iter(d)
+
+# print(f'" {next(my_iter)} Is Progress {d["HTML"]}   "')
+# print(f'" {next(my_iter)} Is Progress {d["CSS"]}   "')
+# print(f'" {next(my_iter)} Is Progress {d["Python"]}   "')
+
+
+# # 1. إنشاء الـ Dictionary
+# skills = {
+#     "HTML": "90%",
+#     "CSS": "80%",
+#     "Python": "30%"
+# }
+
+# # تحويل المفاتيح إلى قائمة للوصول إليها بالفهرس (Index)
+# k = list(skills.keys())
+
+# # 2. طباعة المهارات الثلاث بدون Loop
+# print(f'"{k[0]} Progress Is {skills["HTML"]}"')
+
+
+# # 3. إضافة المهارة الجديدة
+# skills["AI"] = "20%"
+
+# # 4. طباعة المهارة الجديدة
+# print(f'"AI Progress Is {skills["AI"]}"')
 
