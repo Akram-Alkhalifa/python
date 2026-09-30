@@ -619,46 +619,215 @@
 
 # setdefault()
 
-user = {
-  "name": "Osama"
-}
-print(user)
-print(user.setdefault("age", 36))
-print(user)
+# user = {
+#   "name": "Osama"
+# }
+# print(user)
+# print(user.setdefault("age", 36))
+# print(user)
 
-print("=" * 40)
+# print("=" * 40)
 
-# popitem()
+# # popitem()
 
-member = {
-  "name": "Osama",
-  "skill": "PS4"
-}
-print(member)
-member.update({"age": 36})
-print(member.popitem())
-print(member)
+# member = {
+#   "name": "Osama",
+#   "skill": "PS4"
+# }
+# print(member)
+# member.update({"age": 36})
+# print(member.popitem())
+# print(member)
 
-print("=" * 40)
+# print("=" * 40)
 
-# items()
+# # items()
 
-view = {
-  "name": "Osama",
-  "skill": "XBox"
-}
+# view = {
+#   "name": "Osama",
+#   "skill": "XBox"
+# }
 
-allItems = view.items()
-print(view)
-view["age"] = 36
+# allItems = view.items()
+# print(view)
+# view["age"] = 36
 
-print(allItems)
+# print(allItems)
 
-print("=" * 40)
+# print("=" * 40)
 
-# fromkeys()
+# # fromkeys()
 
-a = ('MyKeyOne', 'MyKeyTwo', 'MyKeyThree')
-b = "X"
+# a = ('MyKeyOne', 'MyKeyTwo', 'MyKeyThree')
+# b = "X"
 
-print(dict.fromkeys(a, b))
+# print(dict.fromkeys(a, b))
+
+#*! من 33 حتى 37 # ----------------------------
+
+# age = 30
+# country = "sy"
+# rank = 10
+# print(age > 18 and country == "sy" and rank > 0 )
+# print(age > 18 and country == "d" and rank > 0 )
+# print(age > 18 or country == "d" and rank > 10 )
+# print( not age > 18)
+
+# x = 10
+# y = 3
+# x += y
+# print(x)
+
+# x -= y
+# print(x)
+
+# x *= y
+# print(f"{x:d}")
+
+# x /= y
+# print(f"{x:.0f}")
+
+# x %= y
+# print(x)
+
+# x **= y
+# print(x)
+
+# x //= y
+# print(x)
+
+
+
+# --------------------------
+# -- Comparison Operators --
+# --------------------------
+# [ == ] Equal
+# [ != ] Not Equal
+# [ > ] Greater Than
+# [ < ] Less Than
+# [ >= ] Greater Than Or Equal
+# [ <= ] Less Than Or Equal
+# --------------------------
+
+# # Equal + Not Equal
+
+# print(100 == 100)
+# print(100 == 200)
+# print(100 == 100.00)
+
+# print("#" * 50)
+
+# print(100 != 100)
+# print(100 != 200)
+# print(100 != 100.00)
+
+# print("#" * 50)
+
+# # Greater Than + Less Than
+
+# print(100 > 100)
+# print(100 > 200)
+# print(100 > 100.00)
+# print(100 > 40)
+
+# print("#" * 50)
+
+# print(100 < 100)
+# print(100 < 200)
+# print(100 < 100.00)
+# print(100 < 40)
+
+# print("#" * 50)
+
+# # Greater Than Or Equal + Less Than Or Equal
+
+# print(100 >= 100)
+# print(100 >= 200)
+# print(100 >= 100.00)
+# print(100 >= 40)
+
+# print("#" * 50)
+
+# print(100 <= 100)
+# print(100 <= 200)
+# print(100 <= 100.00)
+# print(100 <= 40)
+
+# print("#" * 50)
+
+
+# ---------------------
+# -- Type Conversion --
+# ----------------------
+
+# # str()
+
+# a = 10
+# print(type(a))
+# print(type(str(a)))
+
+# print("#" * 50)
+
+# # tuple()
+
+# c = "Osama"  # String
+# d = [1, 2, 3, 4, 5]  # List
+# e = {"A", "B", "C"}  # Set
+# f = {"A": 1, "B": 2}  # Dictionary
+
+# print(tuple(c))
+# print(tuple(d))
+# print(tuple(e))
+# print(tuple(f))
+
+# # list()
+
+# c = "Osama"  # String
+# d = (1, 2, 3, 4, 5)  # Tuple
+# e = {"A", "B", "C"}  # Set
+# f = {"A": 1, "B": 2}  # Dictionary
+
+# print(list(c))
+# print(list(d))
+# print(list(e))
+# print(list(f))
+
+# print("#" * 50)
+
+# # set()
+
+# c = "Osama"  # String
+# d = (1, 2, 3, 4, 5)  # Tuple
+# e = ["A", "B", "C"]  # List
+# f = {"A": 1, "B": 2}  # Dictionary
+
+# print(set(c))
+# print(set(d))
+# print(set(e))
+# print(set(f))
+
+# print("#" * 50)
+
+# # dict()
+
+# d = (("A", 1), ("B", 2), ("C", 3))  # Tuple
+# e = [["One", 1], ["Two", 2], ["Three", 3]]  # List
+
+# print(dict(d))
+# print(dict(e))
+
+# ----------------
+# -- User Input --
+# ----------------
+
+#*! من 38 حتى 40 # ----------------------------
+
+fName = input('What\'s Is Your First Name?')
+mName = input('What\'s Is Your Middle Name?')
+lName = input('What\'s Is Your Last Name?')
+
+fName = fName.strip().capitalize().center(len(fName)+2,"$")
+mName = mName.strip().capitalize().center(len(mName)+2,"$")
+lName = lName.strip().capitalize().center(len(lName)+2,"$")
+
+print(f"Hello {fName} {mName:.2s} {lName} Happy To See You.")

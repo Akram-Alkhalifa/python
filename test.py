@@ -266,3 +266,48 @@
 # # 4. طباعة المهارة الجديدة
 # print(f'"AI Progress Is {skills["AI"]}"')
 
+# html = 80
+# css = 60
+# javascript = 70
+
+# print ( html > 50 and css > 50 and javascript > 50 )
+
+
+# num_one = 10
+# num_two = 20
+# num = 20
+
+# print ( num > num_one or num >  num_two)
+# print ( num > num_one and num > num_two)
+
+# num_one = 10
+# num_two = 20
+# result = num_one + num_two
+# print(result)
+# result **=3
+# print(result)
+# result %=26000
+# print(result)
+# result /=5
+# print(result)
+# result=str(result)
+# print(type(result))
+
+# num_one = 10
+# num_two = 20
+
+# # 1. طباعة جمع المتغيرين
+# print(num_one + num_two)
+
+# # 2. طباعة نتيجة الأس 3
+# print((num_one + num_two) ** 3)
+
+# # 3. طباعة باقي القسمة على 26000
+# print(((num_one + num_two) ** 3) % 26000)
+
+# # 4. طباعة القسمة على 5
+# print((((num_one + num_two) ** 3) % 26000) / 5)
+
+# # 5. تحويل النتيجة لـ String ثم طباعة النوع type()
+# print(type(str((((num_one + num_two) ** 3) % 26000) / 5)))
+
