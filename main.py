@@ -822,12 +822,12 @@
 
 #*! من 38 حتى 40 # ----------------------------
 
-fName = input('What\'s Is Your First Name?')
-mName = input('What\'s Is Your Middle Name?')
-lName = input('What\'s Is Your Last Name?')
+# fName = input('What\'s Is Your First Name?')
+# mName = input('What\'s Is Your Middle Name?')
+# lName = input('What\'s Is Your Last Name?')
 
-fName = fName.strip().capitalize().center(len(fName)+2,"$")
-mName = mName.strip().capitalize().center(len(mName)+2,"$")
-lName = lName.strip().capitalize().center(len(lName)+2,"$")
+# fName = fName.strip().capitalize().center(len(fName)+2,"$")
+# mName = mName.strip().capitalize().center(len(mName)+2,"$")
+# lName = lName.strip().capitalize().center(len(lName)+2,"$")
 
-print(f"Hello {fName} {mName:.2s} {lName} Happy To See You.")
+# print(f"Hello {fName} {mName:.2s} {lName} Happy To See You.")

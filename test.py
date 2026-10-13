@@ -311,3 +311,226 @@
 # # 5. تحويل النتيجة لـ String ثم طباعة النوع type()
 # print(type(str((((num_one + num_two) ** 3) % 26000) / 5)))
 
+# age = 17
+# print("App Is Suitable For You" if age > 6 else "App Is Not Suitable For You")
+# # Needed Output
+
+# "App Is Suitable For You" # If Age Larger Than 6
+# "App Is Not Suitable For You" # if Age Smaller Than 16
+# Input Example One "Egypt"
+# Input Example Two "Ghana"
+
+# country = input("Input Your Country ")
+# countries = ["Egypt", "Palestine", "Syria", "Yemen", "KSA", "USA", "Bahrain", "England"]
+# price = 100
+# discount = 30
+# if country in countries:
+#     print(f"Your Country Eligible For Discount And The Price After Discount Is ${price - discount}")
+# else:
+#     print(f"Your Country Not Eligible For Discount And The Price Is ${price}")
+# # Needed Output
+# "Your Country Eligible For Discount And The Price After Discount Is $70" # Egypt Example
+# "Your Country Not Eligible For Discount And The Price Is $100" # Ghana Example
+
+# num = int(input("Input Your Number "))
+# if num <= 0:
+#     print("Number Is Wrong")
+# elif num > 0:
+#     while num > 1:
+#         num -= 1
+#         if num  == 6:
+#             continue
+#         print(num)
+#     print("Done")
+
+# Input
+# friends = ["Mohamed", "Shady", "ahmed", "eman", "Sherif"]
+# ignored_count = 0
+# while friends:
+#         friend = friends.pop(0)
+#         if friend[0].islower():
+#             ignored_count += 1
+#             continue
+#         print(friend)
+# print(f"Done, Ignored {ignored_count} Names")
+
+
+# Code
+# skills = ["HTML", "CSS", "JavaScript", "PHP", "Python"]
+
+# while skills:
+#     print('"' + skills.pop(0) + '"')
+
+
+# my_friends = []
+# max_friends = 4
+
+# while len(my_friends) < max_friends:
+#     name = input("Add friend name: ").strip()
+    
+#     if name.isupper():
+#         print("Invalid Name")
+#     elif name.islower():
+#         name = name.capitalize()
+#         my_friends.append(name)
+#         print(f"Friend {name} Added => 1st Letter Become Capital")
+#         print(f"Names Left in List Is {max_friends - len(my_friends)}")
+#     else:
+#         my_friends.append(name)
+#         print(f"Friend {name} Added")
+#         print(f"Names Left in List Is {max_friends - len(my_friends)}")
+
+# print(my_friends)
+
+# for number in range(1, 21):
+#     if number == 6:
+#         continue
+#     print(number)
+# mySkills = {
+#   "Html": "90%",
+#   "Css": "60%",
+#   "PHP": "70%",
+#   "JS": "80%",
+#   "Python": "90%",
+#   "MySQL": "60%"
+# }
+
+# for skill in mySkills:
+#     print(f"{skill} => {mySkills[skill]}")
+
+# peoples = {
+#   "Osama": {
+#     "Html": "70%",
+#     "Css": "80%",
+#     "Js": "70%"
+#   },
+#   "Ahmed": {
+#     "Html": "90%",
+#     "Css": "80%",
+#     "Js": "90%"
+#   },
+#   "Sayed": {
+#     "Html": "70%",
+#     "Css": "60%",
+#     "Js": "90%"
+#   }
+# }
+
+# for name in peoples:
+
+#   print(f"Skills and Progress For {name} Is: ")
+
+#   for skill in peoples[name]:
+
+#     print(f"{skill.upper()} => {peoples[name][skill]}")
+
+
+# mySkills = {
+#   "HTML": "80%",
+#   "CSS": "90%",
+#   "JS": "70%",
+#   "PHP": "80%"
+# }
+
+# print(mySkills.items())
+
+# myUltimateSkills = {
+#   "HTML": {
+#     "Main": "80%",
+#     "Pugjs": "80%"
+#   },
+#   "CSS": {
+#     "Main": "90%",
+#     "Sass": "70%"
+#   }
+# }
+
+# for main_key , maim_value in myUltimateSkills.items():
+#     print(f"{main_key}:")
+#     for ch_key , ch_value in maim_value.items():
+#         print(f"{ch_key} => {ch_value}")
+  
+
+# my_nums = [15, 81, 5, 17, 20, 21, 13]
+# count = 1
+# for num in my_nums:
+#     if num % 5 == 0:
+#         print(f" {count} {num} ")
+#     count += 1
+# print("Done")
+# Input
+
+# my_nums = [15, 81, 5, 17, 20, 21, 13]
+# for i, num in enumerate(my_nums):
+#     if num % 5 == 0:
+#         print(f"{i} => {num}")
+
+# print("All Numbers Printed")
+# l=range(1, 21)
+# for i in l:
+#     if i in [6,8,12]:
+#         continue
+#     print(f"{str(i).zfill(2)}")
+
+
+# my_ranks = {
+#   'Math': 'A',
+#   "Science": 'B',
+#   'Drawing': 'A',
+#   'Sports': 'C'
+# }
+# total = 0
+# for m_key,m_value in my_ranks.items():
+#     if m_value == 'A':
+#         rank = 100
+#     elif m_value == 'B':
+#         rank = 80
+#     elif m_value == 'C':
+#         rank = 40
+#     total+=rank
+#     print(f"My Rank in {m_key} Is {m_value} And This Equal {rank} Points")
+# print(f"Total Points Is {total}")
+
+
+students = {
+  "Ahmed": {
+    "Math": "A",
+    "Science": "D",
+    "Draw": "B",
+    "Sports": "C",
+    "Thinking": "A"
+  },
+  "Sayed": {
+    "Math": "B",
+    "Science": "B",
+    "Draw": "B",
+    "Sports": "D",
+    "Thinking": "A"
+  },
+  "Mahmoud": {
+    "Math": "D",
+    "Science": "A",
+    "Draw": "A",
+    "Sports": "B",
+    "Thinking": "B"
+  }
+}
+
+for s_key,s_value in students.items():
+    total = 0
+    print(f"-"*50)
+    print(f"Student Name Is {s_key}")
+    print(f"-"*50)
+    for m_key,m_value in s_value.items():
+        if m_value == 'A':
+            rank = 100
+        elif m_value == 'B':
+            rank = 80
+        elif m_value == 'C':
+            rank = 40
+        elif m_value == 'D':
+            rank = 20
+        total+=rank
+        print(f"- {m_key} => {m_value} => {rank} Points")
+    print(f"Total Points For {s_key} Is {total}")
+    
