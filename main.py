@@ -831,3 +831,42 @@
 # lName = lName.strip().capitalize().center(len(lName)+2,"$")
 
 # print(f"Hello {fName} {mName:.2s} {lName} Happy To See You.")
+
+
+#*! من 56 حتى 59 # ----------------------------
+
+# def sayHello(name):
+#     return f"Hello {name}"
+# n = input("Enter Your Name: ").strip().capitalize()
+# print(sayHello(n))
+
+# def d_print():
+#     print("Hello From Function")
+
+# d_print()
+
+
+# def d_fun():
+#     return "Hello F"
+
+# p=d_fun()
+# print(p)
+
+
+
+# def my_Skills(name,*skills):
+#     print(f"Hello {name.upper()} Your Skills Is: ")
+#     for skill in skills:
+#         print(f"- {skill.upper()}")
+
+# my_Skills("akram","html","css")
+# my_Skills("naser","html","css","js","python")
+
+
+def data(name, age=25, country="Syria"):
+    return f"Hello {name} Your Age Is {age} And You Live In {country}"
+
+d=data("akram", 30)
+print(d)
+d1=data("naser", 27, "Egypt")
+print(d1)

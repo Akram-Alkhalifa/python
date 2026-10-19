@@ -492,45 +492,153 @@
 # print(f"Total Points Is {total}")
 
 
-students = {
-  "Ahmed": {
-    "Math": "A",
-    "Science": "D",
-    "Draw": "B",
-    "Sports": "C",
-    "Thinking": "A"
-  },
-  "Sayed": {
-    "Math": "B",
-    "Science": "B",
-    "Draw": "B",
-    "Sports": "D",
-    "Thinking": "A"
-  },
-  "Mahmoud": {
-    "Math": "D",
-    "Science": "A",
-    "Draw": "A",
-    "Sports": "B",
-    "Thinking": "B"
-  }
-}
+# students = {
+#   "Ahmed": {
+#     "Math": "A",
+#     "Science": "D",
+#     "Draw": "B",
+#     "Sports": "C",
+#     "Thinking": "A"
+#   },
+#   "Sayed": {
+#     "Math": "B",
+#     "Science": "B",
+#     "Draw": "B",
+#     "Sports": "D",
+#     "Thinking": "A"
+#   },
+#   "Mahmoud": {
+#     "Math": "D",
+#     "Science": "A",
+#     "Draw": "A",
+#     "Sports": "B",
+#     "Thinking": "B"
+#   }
+# }
 
-for s_key,s_value in students.items():
-    total = 0
-    print(f"-"*50)
-    print(f"Student Name Is {s_key}")
-    print(f"-"*50)
-    for m_key,m_value in s_value.items():
-        if m_value == 'A':
-            rank = 100
-        elif m_value == 'B':
-            rank = 80
-        elif m_value == 'C':
-            rank = 40
-        elif m_value == 'D':
-            rank = 20
-        total+=rank
-        print(f"- {m_key} => {m_value} => {rank} Points")
-    print(f"Total Points For {s_key} Is {total}")
+# for s_key,s_value in students.items():
+#     total = 0
+#     print(f"-"*50)
+#     print(f"Student Name Is {s_key}")
+#     print(f"-"*50)
+#     for m_key,m_value in s_value.items():
+#         if m_value == 'A':
+#             rank = 100
+#         elif m_value == 'B':
+#             rank = 80
+#         elif m_value == 'C':
+#             rank = 40
+#         elif m_value == 'D':
+#             rank = 20
+#         total+=rank
+#         print(f"- {m_key} => {m_value} => {rank} Points")
+#     print(f"Total Points For {s_key} Is {total}")
     
+
+
+# def calc(*numbers):
+#     total = 0
+#     for number in numbers:
+#         if number == 10:
+#             continue
+#         elif number == 5:
+#             total -= number
+#         else:
+#              total += number
+#     return total
+# print(calc(10, 20, 30, 10, 15))
+# print(calc(10, 20, 30, 10, 15, 5, 100))
+
+
+
+# def show_skills(name, *skills):
+#     if not skills:
+#         print(f"Hello {name} You Have No Skills")
+#     else:
+#         print(f"Hello {name} Your Skills Is:")
+#         for skill in skills:
+#             print(f"- {skill}")
+
+# show_skills("Osama")
+# print("-"*50)
+# show_skills("Ahmed", "HTML", "CSS", "JS")
+
+
+
+
+
+# def say_hello(name="Unknown", age="Unknown", country="Unknown"):
+#     return f"Hello {name}, your age is {age}, and you live in {country}"
+# print(say_hello("Osama", 38, "Egypt"))
+# print(say_hello())
+
+
+# def calculate(num_one, num_two, operation="add"):
+#     if operation == "A" or operation == "AdD" or operation == "a":
+#         return num_one + num_two
+#     elif operation == "S" or operation == "subTRACT" or operation == "s":
+#         return num_one - num_two
+#     elif operation == "Multiply" or operation == "*" or operation == "m":
+#         return num_one * num_two
+#     elif operation == "divide" or operation == "/" or operation == "d":
+#         return num_one / num_two
+#     else:
+#         return "Invalid Operation"
+
+# print(calculate(10, 20)) # 30
+# print(calculate(10, 20, "AdD")) # 30
+# print(calculate(10, 20, "a")) # 30
+# print(calculate(10, 20, "A")) # 30
+
+# print(calculate(10, 20, "S")) # -10
+# print(calculate(10, 20, "subTRACT")) # -10
+
+# print(calculate(10, 20, "Multiply")) # 200
+# print(calculate(10, 20, "m")) # 200
+# print(calculate(10, 20, "ff")) # 200
+
+
+# hello = lambda name, age, country: f"Hello {name}, your age is {age}, and you live in {country}"
+
+# print(hello(input("Enter Your Name: "), input("Enter Your Age: "), input("Enter Your Country: ")))
+
+# def mySkills(**skills):
+#     if not skills:
+#         return "You Have No Skills"
+#     else:
+#         for k_skill,v_skill in skills.items():
+#             print(f"My Skill Is {k_skill} And My Progress Is {v_skill}")
+# print("-"*50)
+# print(mySkills(HTML="80%", CSS="90%", JS="70%", PHP="80%", Python="90%", MySQL="60%"))
+# print(mySkills())
+
+
+# ------------------------
+# -- Function Recursion --
+# ------------------------
+# ---------------------------------------------------------------------
+# -- To Understand Recursion, You Need to First Understand Recursion --
+# ---------------------------------------------------------------------
+
+# Test Word [ WWWoooorrrldd ] # print(x[1:])
+
+def cleanWord(word):
+
+  if len(word) == 1:
+
+    return word
+
+  print(f"Print Start Function {word}")
+
+  if word[0] == word[1]:
+
+    print(f"Print Before Condition {word}")
+
+    return cleanWord(word[1:])
+
+  print(f"Print Before Return {word}")
+  return word[0] + cleanWord(word[1:])
+
+  # Stash [ World ]
+
+print(cleanWord("WWWoooorrrldd"))
