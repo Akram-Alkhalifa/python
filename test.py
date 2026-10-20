@@ -622,23 +622,26 @@
 
 # Test Word [ WWWoooorrrldd ] # print(x[1:])
 
-def cleanWord(word):
+# def cleanWord(word):
 
-  if len(word) == 1:
+#   if len(word) == 1:
 
-    return word
+#     return word
 
-  print(f"Print Start Function {word}")
+#   print(f"Print Start Function {word}")
 
-  if word[0] == word[1]:
+#   if word[0] == word[1]:
 
-    print(f"Print Before Condition {word}")
+#     print(f"Print Before Condition {word}")
 
-    return cleanWord(word[1:])
+#     return cleanWord(word[1:])
 
-  print(f"Print Before Return {word}")
-  return word[0] + cleanWord(word[1:])
+#   print(f"Print Before Return {word}")
+#   return word[0] + cleanWord(word[1:])
 
-  # Stash [ World ]
+#   # Stash [ World ]
 
-print(cleanWord("WWWoooorrrldd"))
+# print(cleanWord("WWWoooorrrldd"))
+
+
+

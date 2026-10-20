@@ -863,10 +863,34 @@
 # my_Skills("naser","html","css","js","python")
 
 
-def data(name, age=25, country="Syria"):
-    return f"Hello {name} Your Age Is {age} And You Live In {country}"
+# def data(name, age=25, country="Syria"):
+#     return f"Hello {name} Your Age Is {age} And You Live In {country}"
 
-d=data("akram", 30)
-print(d)
-d1=data("naser", 27, "Egypt")
-print(d1)
+# d=data("akram", 30)
+# print(d)
+# d1=data("naser", 27, "Egypt")
+# print(d1)
+
+
+#**class
+
+class Member:
+    username=0
+    def __init__(self,name,age,gender="Male"):
+        self.fname=name
+        self.age=age
+        self.gender=gender
+
+    def showData(self):
+        if self.gender=="Male":
+            self.a="Mr"
+            return f"Hello {self.a} {self.fname} Your Age Is {self.age} And You Are {self.gender}"
+        elif self.gender=="Female":
+            self.a="Mrs"
+            return f"Hello {self.a} {self.fname} Your Age Is {self.age} And You Are {self.gender}"
+
+
+m=Member("akram", 30)
+print(m.showData())
+m=Member("sara", 25, "Female")
+print(m.showData())
